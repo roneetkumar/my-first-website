@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import url('fab.css');
+@import url('footer.css');
+.footer {
+    margin-top: 70px;
+}
+
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #e0e0e0 !important;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+span {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0px;
+}
+
+/*-----------------------------------------------st-pic start------------------------------------------------*/
+
+.st-pic {
+    background-image: url('../assets/abc1.jpg') !important;
+    background-size: cover !important;
+    background-position: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    margin: 50px auto;
+    z-index: 1;
+}
+
+/*-----------------------------------------------st-pic end--------------------------------------------*/
+
+/*-----------------------------------------------story start----------------------------------------------*/
+
+.story {
+    position: relative;
+    width: 500px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 30px auto;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    cursor: default;
+}
+
+.story p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    padding: 40px 20px;
+    text-align: justify;
+    margin: auto;
+}
+
+/*-------------------------------------------------story end------------------------------------------------*/
+
+/*-----------------------------------next button statt----------------------------------------------*/
+
+.nextb {
+    position: relative;
+    width: 90px;
+    height: 40px;
+    margin: 0px auto;
+    background-color: #424242;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nextb:active {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background-color: #424242;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.nextb i {
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+/*-------------------------------------------next button end---------------------------------------------------*/
+
+/*-------------------------------------------@media queries start---------------------------------------*/
+
+@media only screen and (max-width: 530px) {
+    .story {
+        width: 100%;
+    }
+    .story p {
+        font-size: 18px;
+    }
+    .st-pic {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .button {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .button-checkbox:checked~.button-option .tooltiptext {
+        visibility: visible;
+        -webkit-transition-delay: 0.4s;
+        transition-delay: 0.4s;
+    }
+}
